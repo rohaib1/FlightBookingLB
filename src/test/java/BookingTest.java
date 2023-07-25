@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public
@@ -17,6 +19,6 @@ class BookingTest {
 
         //System.out.println(bookingSystem.displayFlight());
 
-       // assertThat(bookingSystem.displayFlight()).isEqualTo(["Destination: London Flight number: EZY0001" , "Destination: Cardiff Flight number: EZY8654"]);
+        assertThat(bookingSystem.displayFlight()).isEqualTo(Arrays.asList("Destination: London Flight number: EZY0001", "Destination: Cardiff Flight number: EZY8654"));
     }
 }
