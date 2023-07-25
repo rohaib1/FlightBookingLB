@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public
-class BookingTest {
+public class BookingTest {
 
     @Test
 

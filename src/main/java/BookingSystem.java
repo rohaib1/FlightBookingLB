@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-public
-class BookingSystem {
+public class BookingSystem {
 
     private ArrayList<Flight> flights;
     private ArrayList<Passenger> passengers;
@@ -11,23 +10,19 @@ class BookingSystem {
         this.passengers = new ArrayList<>();
     }
 
-    public
-    ArrayList<Flight> getFlights(){
+    public ArrayList<Flight> getFlights(){
         return flights;
     }
 
-    public
-    void setFlights(ArrayList<Flight> flights){
+    public void setFlights(ArrayList<Flight> flights){
         this.flights = flights;
     }
 
-    public
-    ArrayList<Passenger> getPassengers(){
+    public ArrayList<Passenger> getPassengers(){
         return passengers;
     }
 
-    public
-    void setPassengers(ArrayList<Passenger> passengers){
+    public void setPassengers(ArrayList<Passenger> passengers){
         this.passengers = passengers;
     }
 
@@ -42,8 +37,16 @@ class BookingSystem {
     public ArrayList<String> displayFlight(){
         ArrayList<String> flightInfo = new ArrayList<>();
         for (Flight flight:flights) {
-            flightInfo.add("Destination: " + flight.getDestination() + " Flight number: " + flight.getFlightNumber());
+            flightInfo.add("Destination: " + flight.getDestination() + " | Flight number: " + flight.getFlightNumber());
         }
         return  flightInfo;
+    }
+
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+
+    public void removePassenger(Passenger passenger){
+        this.passengers.remove(passenger);
     }
 }

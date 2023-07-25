@@ -13,8 +13,7 @@ class Flight {
         this.flightNumber = flightNumber;
     }
 
-    public
-    ArrayList<Passenger> getPassengers(){
+    public ArrayList<Passenger> getPassengers(){
         return passengers;
     }
 
